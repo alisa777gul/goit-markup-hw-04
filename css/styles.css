@@ -343,12 +343,11 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 }
 
 
-.list-icons-item:hover .link
-{
+.list-icons-item .link:hover{
  background-color: #404bbf;
 }
 
-.list-icons-item:focus .link{
+.list-icons-item .link:focus{
     background-color: #404bbf;
 }
 
@@ -551,11 +550,13 @@ margin-right: 120px;
 }
 
 
-.item-icons-footer:hover .link{
+.item-icons-footer .link:hover {
     background-color: #31d0aa;;
 }
 
-.item-icons-footer:focus .link{
+
+
+.item-icons-footer .link:focus{
     background-color: #31d0aa;
 }
 
