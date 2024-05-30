@@ -330,6 +330,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 .list-icons-workers{
  display: flex;
+ justify-items: center;
  gap: 24px;
  flex-shrink: 0;
  padding: 8px 16px 0 16px;
@@ -418,7 +419,12 @@ margin-bottom: 8px;
 .portfolio-list-element{
 
     width: calc((100% - 48px) / 3);
-   
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-element:hover{
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .cont-portf{
@@ -436,8 +442,12 @@ border-top: none;
 
 .overlay {
     
-    background-color: #4d5ae5;
-    color: #f4f4fd;
+   
+}
+
+.text-overlay{
+ background-color: #4d5ae5;
+
     font-family: sans-serif;
     position: absolute;
     top: 0;
@@ -446,19 +456,15 @@ border-top: none;
     height: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-.text-overlay{
-
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
 
-       padding: 40px 32px 0;
+       padding: 40px 32px ;
 }
 
- .overlay-image:hover .overlay {
+ .overlay-image:hover .text-overlay {
      transform: translateY(0);
  }
 
@@ -501,7 +507,7 @@ max-width: 264px;
 
 }
 
-.socials{ 
+.footer-first{ 
 margin-right: 120px;
 }
 
@@ -513,7 +519,7 @@ margin-right: 120px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #fff;
-        
+        margin-bottom: 16px;
 }
 
 .item-icons-footer .link {
@@ -531,7 +537,7 @@ margin-right: 120px;
     display: flex;
     gap: 16px;
     flex-shrink: 0;
-padding-top: 16px;
+
 }
 
 .icon-footer {
